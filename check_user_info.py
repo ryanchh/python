@@ -12,11 +12,11 @@ class CheckUserInfo:
         return flag
 
     def check_pwd_len(self, pwd):
-        '''密码长度不超过8位'''
+        '''password too short'''
         return len(pwd)>=8
 
     def check_pwd_contain_leter(self, pwd):
-        '''密码包含大小写英文字母'''
+        '''contains upper case and lower case'''
         flag = False
         pattern = re.compile('[A-Z][a-z]+')
         match = pattern.findall(pwd)
@@ -26,7 +26,7 @@ class CheckUserInfo:
         return flag
 
     def check_pwd_contain_num(self, pwd):
-        '''密码包含数字'''
+        '''contains number'''
         flag = False
         pattern = re.compile('[0-9]+')
         match = pattern.findall(pwd)

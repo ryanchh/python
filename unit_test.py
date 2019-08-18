@@ -1,6 +1,6 @@
 import unittest
 
-from com.unit_test.check_user_info import CheckUserInfo
+from check_user_info import CheckUserInfo
 
 class CheckUserInfoTestCase(unittest.TestCase):
 
