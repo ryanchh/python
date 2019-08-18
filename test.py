@@ -1,2 +1,4 @@
+def show():
+  print("hello")
 
-print("hello");
+show()
